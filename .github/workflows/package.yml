@@ -3,7 +3,7 @@ name: Build & publish container image
 on:
   push:
     branches: 
-      - "master"
+      - "main"
     tags:
       - "v*"
 
