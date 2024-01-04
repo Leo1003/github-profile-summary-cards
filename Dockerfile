@@ -11,6 +11,7 @@ USER 1000:1000
 COPY --chown=1000:1000 . ./
 
 RUN npm ci && \
+    npm run build && \
     rm -rf /home/node/.npm
 
 ENTRYPOINT ["./docker-entrypoint.sh"]
